@@ -1,0 +1,35 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bae6fd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="field-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14532d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#sky-grad)" />
+  
+  <!-- Sun -->
+  <circle cx="700" cy="80" r="50" fill="#fde047" opacity="0.8" />
+  
+  <!-- Field -->
+  <rect y="350" width="800" height="250" fill="url(#field-grad)" />
+  
+  <!-- Farmer Silhouette -->
+  <path d="M400,600 L400,300 L350,350 L350,600 Z" fill="#1e293b" /> <!-- Legs/Body base -->
+  <path d="M350,350 Q400,250 450,350" fill="#1e293b" /> <!-- Shoulders -->
+  <circle cx="400" cy="280" r="40" fill="#1e293b" /> <!-- Head -->
+  
+  <!-- Tablet -->
+  <rect x="420" y="320" width="60" height="80" rx="5" fill="#f8fafc" transform="rotate(-15 450 360)" />
+  <rect x="425" y="325" width="50" height="70" rx="2" fill="#10b981" transform="rotate(-15 450 360)" />
+
+  <!-- Crop stalks -->
+  <path d="M100,600 L100,450 M120,600 L120,470 M50,600 L50,460" stroke="#bef264" stroke-width="5" />
+  <path d="M700,600 L700,450 M720,600 L720,470 M650,600 L650,460" stroke="#bef264" stroke-width="5" />
+  
+</svg>
