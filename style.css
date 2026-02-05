@@ -573,3 +573,147 @@ input:focus, textarea:focus, select:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color); 
 }
+
+/* --- Mobile Improvements --- */
+
+/* Typography Scaling */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px; /* Base scale down */
+  }
+  
+  h1 {
+    font-size: 2.2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+/* Improve Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-menu {
+    height: 100vh;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(15px);
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-link {
+    font-size: 1.25rem;
+    display: block;
+    padding: 10px;
+  }
+}
+
+/* Hero Section Mobile Tweaks */
+@media (max-width: 900px) {
+  .hero {
+    padding: 120px 0 60px;
+  }
+  
+  .hero-content {
+    gap: 40px;
+  }
+
+  /* Make buttons stack on very small screens */
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-btns .btn {
+    width: 100%;
+  }
+
+  /* Adjust Floating Stat Cards for Mobile */
+  .hero-image .stat-card {
+    position: relative;
+    top: auto !important;
+    bottom: auto !important;
+    right: auto !important;
+    left: auto !important;
+    margin: 10px auto;
+    width: 80%;
+    animation: none; /* Disable float animation on mobile to prevent layout jumps */
+  }
+  
+  .hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Grid Improvements */
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr; /* Force single column */
+    gap: 20px;
+  }
+  
+  /* Timeline tweaks */
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline-dot {
+    left: 1px !important;
+  }
+  .timeline-item {
+    padding-left: 35px;
+    padding-right: 0;
+  }
+}
+
+/* Footer Mobile */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Stack footer columns */
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .logo {
+    justify-content: center;
+  }
+  
+  .footer-col p {
+    max-width: 400px;
+    margin: 0 auto 1rem;
+  }
+  
+  .footer-col div[style*="display: flex"] {
+    justify-content: center;
+  }
+  
+  .bottom-bar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* Glass Card Mobile Padding */
+@media (max-width: 480px) {
+  .glass-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Sticky CTA Polish */
+.mobile-sticky-cta {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+  padding: 12px 20px;
+}
